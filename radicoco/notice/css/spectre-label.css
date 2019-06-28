@@ -1,0 +1,40 @@
+/*!Spectre.css v0.5.3 | MIT License | github.com/picturepan2/spectre*/
+.label {
+    border-radius: .1rem;
+    line-height: 1.2;
+    padding: .1rem .2rem;
+    background: #f0f1f4;
+    color: #5b657a;
+    display: inline-block
+}
+
+.label.label-rounded {
+    border-radius: 5rem;
+    padding-left: .4rem;
+    padding-right: .4rem
+}
+
+.label.label-primary {
+    background: #5755d9;
+    color: #fff
+}
+
+.label.label-secondary {
+    background: #f1f1fc;
+    color: #5755d9
+}
+
+.label.label-success {
+    background: #32b643;
+    color: #fff
+}
+
+.label.label-warning {
+    background: #ffb700;
+    color: #fff
+}
+
+.label.label-error {
+    background: #e85600;
+    color: #fff
+}
