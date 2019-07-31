@@ -1,0 +1,93 @@
+/*!Spectre.css v0.5.3 | MIT License | github.com/picturepan2/spectre*/
+
+* , ::after, ::before {
+    box-sizing: inherit
+}
+
+/* Badges */
+
+.badge {
+    position: relative;
+    white-space: nowrap
+}
+
+.badge:not([data-badge])::after, .badge[data-badge]::after {
+    /*background: #5755d9;*/
+    background: #f13c33;
+    background-clip: padding-box;
+    border-radius: .5rem;
+    /*box-shadow: 0 0 0 .1rem #c23d3a;*/
+    box-shadow: 0 0 0 1px translate;
+    color: #fff;
+    content: attr(data-badge);
+    display: inline-block;
+    transform: translate(-.05rem, -.5rem)
+}
+
+.badge[data-badge]::after {
+    /*font-size: .7rem;
+    height: .9rem;
+    line-height: 1;
+    min-width: .8rem;
+    padding: .1rem .1rem;
+    text-align: center;
+    white-space: nowrap*/
+    font-size: 10px;
+    padding: 2px 5px;
+    width: 7px;
+}
+
+.badge:not([data-badge])::after, .badge[data-badge=""]::after {
+    height: 6px;
+    min-width: 6px;
+    padding: 0;
+    width: 6px
+}
+
+/* Tooltips */
+
+.tooltip {
+    position: relative
+}
+
+.tooltip::after {
+    background: rgba(69, 77, 93, .9);
+    border-radius: .1rem;
+    bottom: 100%;
+    color: #fff;
+    content: attr(data-tooltip);
+    display: block;
+    font-size: .7rem;
+    left: 50%;
+    max-width: 320px;
+    opacity: 0;
+    overflow: hidden;
+    padding: .2rem .4rem;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, .4rem);
+    transition: all .2s ease;
+    white-space: pre;
+    z-index: 300
+}
+
+.tooltip:focus::after, .tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -.2rem)
+}
+
+.tooltip.disabled, .tooltip[disabled] {
+    pointer-events: auto
+}
+
+.tooltip.tooltip-bottom::after {
+    bottom: auto;
+    /*top: 100%;*/
+    top: 150%;
+    transform: translate(-50%, -.4rem)
+}
+
+.tooltip.tooltip-bottom:focus::after, .tooltip.tooltip-bottom:hover::after {
+    transform: translate(-50%, .2rem)
+}
