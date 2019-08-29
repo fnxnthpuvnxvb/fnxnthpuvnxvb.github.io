@@ -17,6 +17,7 @@
   
   
   <link rel="stylesheet" href="./changelog.min.css">
+  <link rel="stylesheet" href="./grid-layout.css">
 
   
 
@@ -25,12 +26,17 @@
 </head>
 <body>
 
-<div class="section text-center">
-    <h1>radicoco リリースノート</h1>
+<div id="header" class="section text-center">
+    <h1>
+  <span style="font-family: 'Avenir Next'; font-weight: bold">
+    radicoco
+  </span>
+   リリースノート
+</h1>
 
 </div>
 
-<div class="content">
+<div id="main" class="content">
     <div class="container grid-lg">
         <div class="columns">
             <div class="column col-10 col-sm-12 col-mx-auto text-left">
@@ -46,15 +52,45 @@
                     
 
                     
+                    
+
+                    
                         <div class="timeline-item">
                             <div class="timeline-left">
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
+                      
+                                <h4>
+                                    v1.2 (リリース準備中)
+                                </h4>
+                                <small>coming soon</small>
+                      
+                                <div>
+                                    <ul>
+<li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
+オーディオデバイスを指定できるオプション <sup>*2</sup></li>
+<li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
+放送局を非表示にするオプション</li>
+<li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
+エリア判定結果が前回と異なる場合に略称設定で問題が出ていたのを修正</li>
+</ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-item">
+                            <div class="timeline-left">
+                                <div class="timeline-icon"></div>
+                            </div>
+                            <div class="changes timeline-content">
+                      
                                 <h4>
                                     v1.1 
                                 </h4>
                                 <small>released on 2019-07-31</small>
+                      
                                 <div>
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
@@ -91,11 +127,8 @@
 Aboutパネルに<code>[謝辞]</code>ボタンを追加し、メニューから<code>[謝辞...]</code>項目を削除</li>
 <li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
 特定条件下で番組タイトル一覧のメニューが作り直しされない問題を解決</li>
-
-<li><p><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
-その他複数の軽微なバグを修正</p></li>
-
-<li><p><sup>*1</sup>：Standard版のみ</p></li>
+<li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
+その他複数の軽微なバグを修正</li>
 </ul>
 
                                 </div>
@@ -107,10 +140,12 @@ Aboutパネルに<code>[謝辞]</code>ボタンを追加し、メニューから
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
+                      
                                 <h4>
                                     v1.0.2 
                                 </h4>
                                 <small>released on 2019-05-17</small>
+                      
                                 <div>
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-published">published</span>
@@ -132,6 +167,11 @@ Mac App Storeにて配信開始</li>
         </div>
     </div>
 </div>
+
+<div id="footer">
+  <ul style="list-style: none"><li style="margin-top: 0"><sup>*1</sup>：Standard版のみ</li><li style="margin-top: 0"><sup>*2</sup>：Macの“Audio MIDI 設定”で認識されているオーディオ出力装置が指定可能（注：なお、macOSの標準オーディオドライバで動作しない等の一部のデバイスは、使用できない可能性があります。）</li></ul>
+</div>
+
 </body>
 </html>
 

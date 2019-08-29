@@ -1,0 +1,36 @@
+body {
+display: grid;
+grid-template-columns: 1fr auto;
+grid-template-areas: 'header header'
+                     'main side'
+                     'footer side';
+}
+
+#header {
+grid-area: header;
+padding-top: 1em;
+}
+
+#main {
+grid-area: main;
+/*overflow-y: scroll;
+overflow-x: hidden;
+height: calc(100vh - 137px);
+*/
+}
+
+#side {
+grid-area: side;
+display: none;
+}
+
+#footer {
+grid-area: footer;
+background-color: #f6f8fa;
+font-size: 9pt;
+}
+
+/* Latest release */
+div.timeline-item:first-of-type::before {
+background-color: #ffb700 !important;
+}
