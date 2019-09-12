@@ -53,6 +53,25 @@
 
                     
                     
+                      
+                        <div class="timeline-item">
+                            <div class="timeline-left">
+                                <div class="timeline-icon"></div>
+                            </div>
+                            <div class="changes timeline-content">
+                                <h4>Unreleased (次回リリース予定)</h4>
+                                <small>release date still undecided</small>
+                                <div>
+                                    <ul>
+<li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
+HLS (HTTP Live Streaming) 配信方式への対応 <sup>*3</sup></li>
+</ul>
+
+                                </div>
+                            </div>
+                        </div>
+                      
+                    
 
                     
                         <div class="timeline-item">
@@ -62,14 +81,26 @@
                             <div class="changes timeline-content">
                       
                                 <h4>
-                                    v1.2 (リリース準備中)
+                                    v1.2 
                                 </h4>
-                                <small>coming soon</small>
+                                <small>released on 2019-09-12</small>
                       
                                 <div>
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
-オーディオデバイスを指定できるオプション <sup>*2</sup></li>
+オーディオデバイスを指定できるオプション <sup>*2</sup>
+<span class="accordion">
+<input type="checkbox" id="accordion-1" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-1" style="display:inline;">
+<i class="icon icon-arrow-right mr-1 more"></i>
+</label>
+<div class="accordion-body details">
+<pre>
+#【無料版の設定方法】ターミナルから以下のコマンドを実行して、アプリを再起動してください。
+defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイス名&rdquo;
+</pre>
+</div>
+</span></li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 放送局を非表示にするオプション</li>
 <li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
@@ -169,7 +200,13 @@ Mac App Storeにて配信開始</li>
 </div>
 
 <div id="footer">
-  <ul style="list-style: none"><li style="margin-top: 0"><sup>*1</sup>：Standard版のみ</li><li style="margin-top: 0"><sup>*2</sup>：Macの“Audio MIDI 設定”で認識されているオーディオ出力装置が指定可能（注：なお、macOSの標準オーディオドライバで動作しない等の一部のデバイスは、使用できない可能性があります。）</li></ul>
+  <ol class="sup"><li>
+        Standard版のみ
+      </li><li>
+        Macの“Audio MIDI 設定”で認識されているオーディオ出力装置が指定可能です。 （注: なお、macOSの標準オーディオドライバで動作しない等の一部のデバイスは、使用できない可能性があります。）
+      </li><li>
+        HLS配信を聴取する場合、「ラジコオーディオアド」の実証実験を行っている局では、実際の放送に対して数分程度の遅延が発生する場合があります。 （2019年9月現在）
+      </li></ol>
 </div>
 
 </body>

@@ -26,11 +26,55 @@ display: none;
 
 #footer {
 grid-area: footer;
+color: #888;
 background-color: #f6f8fa;
 font-size: 9pt;
+font-feature-settings: "palt";
+}
+
+/* Footnotes */
+#footer ol {
+  counter-reset: my-counter;
+  list-style: none;
+}
+
+#footer li {
+  position: relative;
+  text-indent: -1.3em;
+  padding-left: 1.3em;
+  margin-top: 0;
+}
+#footer li:before {
+  counter-increment: my-counter;
+  content: '*' counter(my-counter);
+  margin-right: 1.0em;
+
+/* sup text */
+font-size: 90%;
+vertical-align: top;
+position: relative;
+top: -0.3em;
 }
 
 /* Latest release */
 div.timeline-item:first-of-type::before {
 background-color: #ffb700 !important;
+}
+
+/* accordion */
+.details pre {
+font-size: 80%;
+background: #f6f8fa;
+color: #888;
+margin: 0;
+padding: 10px;
+line-height: 1.25;
+}
+
+i.more {
+float: right;
+color: #888;
+}
+i.more:hover {
+color: #222;
 }
