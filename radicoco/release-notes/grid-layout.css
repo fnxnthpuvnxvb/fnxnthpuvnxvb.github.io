@@ -62,7 +62,8 @@ background-color: #ffb700 !important;
 }
 
 /* accordion */
-.details pre {
+.details pre,
+.details div {
 font-size: 80%;
 background: #f6f8fa;
 color: #888;
@@ -77,4 +78,9 @@ color: #888;
 }
 i.more:hover {
 color: #222;
+}
+
+/* detail items */
+span.detail > ul {
+margin-top: 0;
 }

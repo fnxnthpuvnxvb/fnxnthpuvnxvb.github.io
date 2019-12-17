@@ -53,26 +53,82 @@
 
                     
                     
-                      
+
+                    
                         <div class="timeline-item">
                             <div class="timeline-left">
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                                <h4>Unreleased (次回リリース予定)</h4>
-                                <small>release date still undecided</small>
+                      
+                                <h4>
+                                    v2.0 
+                                </h4>
+                                <small>released on 2019-12-17</small>
+                      
                                 <div>
                                     <ul>
+<li>・中身を一新（Pythonが非推奨になったため、Swiftで書き直し）:
+<span class="detail">
+
+<ul>
+<li><span class="label label-rounded text-light text-capitalize tag-changed">changed</span>
+最小システム要件を「macOS 10.13 High Sierra」以降に変更</li>
+<li><span class="label label-rounded text-light text-capitalize tag-removed">removed</span>
+設定ファイル(.conf)の読み込み機能を廃止
+<span class="accordion">
+<input type="checkbox" id="accordion-2" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-2" style="display:inline;">
+<i class="icon icon-arrow-right mr-1 more"></i>
+</label>
+<div class="accordion-body details">
+<div>
+注：設定ファイルで放送局の略称をカスタマイズされていた方は、環境設定で再設定してください。
+</div>
+</div>
+</span></li>
+<li><span class="label label-rounded text-light text-capitalize tag-changed">changed</span>
+チェックボックスで設定するオプションのデフォルト値をすべて「No(いいえ)」に変更
+<span class="accordion">
+<input type="checkbox" id="accordion-3" name="accordion-checkbox" hidden>
+<label class="accordion-header" for="accordion-3" style="display:inline;">
+<i class="icon icon-arrow-right mr-1 more"></i>
+</label>
+<div class="accordion-body details">
+<div>
+注：一部の設定は引き継がれません。環境設定を開き、チェックが外れていた場合は再設定してください。
+</div>
+</div>
+</span></li>
+<li><span class="label label-rounded text-light text-capitalize tag-changed">changed</span>
+ライブストリーミング再生は「HLS(HTTP Live Streaming)」形式に変更
+</span></li>
+</ul></li>
+<li>・VoiceOver利用時のアクセシビリティを改善: <sup>*3</sup>
+<span class="detail">
+
+<ul>
+<li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
+VoiceOverのキーボード操作で最下項目（およびサブメニュー）へアクセスできるようになります</li>
+<li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
+VoiceOverの読み上げ機能で（最下項目に表示されている）現在の聴取エリアが読み上げられるようになります
+</span></li>
+</ul></li>
+<li>・連続している半角感嘆符に等幅フォントを適用すると、文字間が間延びしてしまうのを改善: <sup>*1</sup>
+<span class="detail">
+
+<ul>
+<li><span class="label label-rounded text-light text-capitalize tag-removed">removed</span>
+半角感嘆符に等幅フォントを適用するオプションを廃止</li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
-HLS (HTTP Live Streaming) 配信方式への対応 <sup>*3</sup></li>
+半角感嘆符の前後の文字間を自動的に調整するオプションを追加
+</span></li>
+</ul></li>
 </ul>
 
                                 </div>
                             </div>
                         </div>
-                      
-                    
-
                     
                         <div class="timeline-item">
                             <div class="timeline-left">
@@ -130,6 +186,7 @@ defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイ
 配信元メンテナンス情報の自動取得・表示 <sup>*1</sup></li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 書体に関するオプション: <sup>*1</sup>
+<span class="detail">
 
 <ul>
 <li>・全角ローマ数字をヒラギノフォントで表示
@@ -139,16 +196,19 @@ defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイ
 <span class="seriffont">Ⅰ</span>,
 <span class="seriffont">Ⅱ</span>,
 <span class="seriffont">Ⅲ</span>）</li>
-<li>・半角感嘆符を等幅フォントで表示</li>
+<li>・半角感嘆符を等幅フォントで表示
+</span></li>
 </ul></li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 “放送大学”の番組タイトル表示に関するオプション: <sup>*1</sup>
+<span class="detail">
 
 <ul>
 <li>・各回のテーマを番組タイトルに含めて表示</li>
 <li>・外国語科目名の末尾の数字をローマ数字に変換
 （例：<span class="systemfont">フランス語２</span> →
-<span class="systemfont">フランス語</span><span class="seriffont">Ⅱ</span>）</li>
+<span class="systemfont">フランス語</span><span class="seriffont">Ⅱ</span>）
+</span></li>
 </ul></li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 番組タイトルの全角→半角変換に関するオプション <sup>*1</sup></li>
@@ -205,7 +265,7 @@ Mac App Storeにて配信開始</li>
       </li><li>
         Macの“Audio MIDI 設定”で認識されているオーディオ出力装置が指定可能です。 （注: なお、macOSの標準オーディオドライバで動作しない等の一部のデバイスは、使用できない可能性があります。）
       </li><li>
-        HLS配信を聴取する場合、「ラジコオーディオアド」の実証実験を行っている局では、実際の放送に対して数分程度の遅延が発生する場合があります。 （2019年9月現在）
+        アプリ起動時にVoiceOverが有効になっている場合、メニューの最下項目はテキスト表示になります。
       </li></ol>
 </div>
 
