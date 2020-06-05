@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.55.5" />
+  <meta name="generator" content="Hugo 0.55.6" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -18,6 +18,7 @@
   
   <link rel="stylesheet" href="./changelog.min.css">
   <link rel="stylesheet" href="./grid-layout.css">
+  <link rel="stylesheet" href="./roman-num.css">
 
   
 
@@ -36,10 +37,10 @@
 
 </div>
 
-<div id="main" class="content">
+<div class="content">
     <div class="container grid-lg">
         <div class="columns">
-            <div class="column col-10 col-sm-12 col-mx-auto text-left">
+            <div class="column        col-sm-12 col-mx-auto text-left">
                 
 
                 <div class="section timeline">
@@ -52,21 +53,66 @@
                     
 
                     
-                    
+                        <div class="timeline-item">
+                            <div class="timeline-left">
+                                <div class="timeline-icon"></div>
+                            </div>
+                            <div class="changes timeline-content">
+                                <h4>
+                                    v2.2 
+                                </h4>
+                                <small>released on 2020-05-12</small>
+                                <div class="changes-entry">
+                                    <ul>
+<li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
+番組タイトル一覧メニューのうち、時間帯の部分の文字色を変更し、視認性を向上</li>
+<li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
+配信元のシステムメンテナンス等で、エリア判定に失敗した時の挙動を改善:
+<span class="detail">
 
+<ul>
+<li>アラートを出さずに、前回成功時（初期値：TOKYO）のエリアを仮設定</li>
+<li>メニューバーのアイコンをびっくりマーク(!)付きに変更</li>
+<li>メニュー最下行にエラー内容を表示
+</span></li>
+</ul></li>
+<li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
+複数のバグを修正し、安定性を向上</li>
+</ul>
+
+                                </div>
+                            </div>
+                        </div>
                     
                         <div class="timeline-item">
                             <div class="timeline-left">
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                      
+                                <h4>
+                                    v2.1.1 
+                                </h4>
+                                <small>released on 2020-04-07</small>
+                                <div class="changes-entry">
+                                    <ul>
+<li><span class="label label-rounded text-light text-capitalize tag-fixed">fixed</span>
+複数の軽微なバグを修正し、全体的な安定性を向上</li>
+</ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="timeline-item">
+                            <div class="timeline-left">
+                                <div class="timeline-icon"></div>
+                            </div>
+                            <div class="changes timeline-content">
                                 <h4>
                                     v2.1 
                                 </h4>
                                 <small>released on 2020-02-19</small>
-                      
-                                <div>
+                                <div class="changes-entry">
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 AppleScript対応
@@ -109,16 +155,14 @@ tell application "radicoco" to stop</pre>
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                      
                                 <h4>
                                     v2.0 
                                 </h4>
                                 <small>released on 2019-12-17</small>
-                      
-                                <div>
+                                <div class="changes-entry">
                                     <ul>
-<li>・中身を一新（Pythonが非推奨になったため、Swiftで書き直し）:
-<span class="detail">
+<li>⁃ 中身を一新（Pythonが非推奨になったため、Swiftで書き直し）:
+<span class="detail nonstyle">
 
 <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-changed">changed</span>
@@ -153,18 +197,18 @@ tell application "radicoco" to stop</pre>
 ライブストリーミング再生は「HLS(HTTP Live Streaming)」形式に変更
 </span></li>
 </ul></li>
-<li>・VoiceOver利用時のアクセシビリティを改善: <sup>*3</sup>
-<span class="detail">
+<li>⁃ VoiceOver利用時のアクセシビリティを改善: <sup>*3</sup>
+<span class="detail nonstyle">
 
 <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
-VoiceOverのキーボード操作で最下項目（およびサブメニュー）へアクセスできるようになります</li>
+VoiceOverのキーボード操作で最下項目（およびサブメニュー）へのアクセスを可能にする対応</li>
 <li><span class="label label-rounded text-light text-capitalize tag-improved">improved</span>
-VoiceOverの読み上げ機能で（最下項目に表示されている）現在の聴取エリアが読み上げられるようになります
+VoiceOverの読み上げ機能で（最下項目に表示されている）現在の聴取エリアを読み上げられるようにする対応
 </span></li>
 </ul></li>
-<li>・連続している半角感嘆符に等幅フォントを適用すると、文字間が間延びしてしまうのを改善: <sup>*1</sup>
-<span class="detail">
+<li>⁃ 連続している半角感嘆符に等幅フォントを適用すると、文字間が間延びしてしまうのを改善: <sup>*1</sup>
+<span class="detail nonstyle">
 
 <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-removed">removed</span>
@@ -184,13 +228,11 @@ VoiceOverの読み上げ機能で（最下項目に表示されている）現�
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                      
                                 <h4>
                                     v1.2 
                                 </h4>
                                 <small>released on 2019-09-12</small>
-                      
-                                <div>
+                                <div class="changes-entry">
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 オーディオデバイスを指定できるオプション <sup>*2</sup>
@@ -221,13 +263,11 @@ defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイ
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                      
                                 <h4>
                                     v1.1 
                                 </h4>
                                 <small>released on 2019-07-31</small>
-                      
-                                <div>
+                                <div class="changes-entry">
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
 環境設定 <sup>*1</sup></li>
@@ -238,14 +278,14 @@ defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイ
 <span class="detail">
 
 <ul>
-<li>・全角ローマ数字をヒラギノフォントで表示
+<li>全角ローマ数字をヒラギノフォントで表示
 （明朝体の例：<span class="systemfont">Ⅰ</span>,
 <span class="systemfont">Ⅱ</span>,
 <span class="systemfont">Ⅲ</span> →
 <span class="seriffont">Ⅰ</span>,
 <span class="seriffont">Ⅱ</span>,
 <span class="seriffont">Ⅲ</span>）</li>
-<li>・半角感嘆符を等幅フォントで表示
+<li>半角感嘆符を等幅フォントで表示
 </span></li>
 </ul></li>
 <li><span class="label label-rounded text-light text-capitalize tag-new">new</span>
@@ -253,8 +293,8 @@ defaults write io.github.fnxnthpuvnxvb.radicoco ffplay_audiodev &ldquo;デバイ
 <span class="detail">
 
 <ul>
-<li>・各回のテーマを番組タイトルに含めて表示</li>
-<li>・外国語科目名の末尾の数字をローマ数字に変換
+<li>各回のテーマを番組タイトルに含めて表示</li>
+<li>外国語科目名の末尾の数字をローマ数字に変換
 （例：<span class="systemfont">フランス語２</span> →
 <span class="systemfont">フランス語</span><span class="seriffont">Ⅱ</span>）
 </span></li>
@@ -280,13 +320,11 @@ Aboutパネルに<code>[謝辞]</code>ボタンを追加し、メニューから
                                 <div class="timeline-icon"></div>
                             </div>
                             <div class="changes timeline-content">
-                      
                                 <h4>
                                     v1.0.2 
                                 </h4>
                                 <small>released on 2019-05-17</small>
-                      
-                                <div>
+                                <div class="changes-entry">
                                     <ul>
 <li><span class="label label-rounded text-light text-capitalize tag-published">published</span>
 Mac App Storeにて配信開始</li>
@@ -307,7 +345,6 @@ Mac App Storeにて配信開始</li>
         </div>
     </div>
 </div>
-
 <div id="footer">
   <ol class="sup"><li>
         Standard版のみ
@@ -317,7 +354,6 @@ Mac App Storeにて配信開始</li>
         アプリ起動時にVoiceOverが有効になっている場合、メニューの最下項目はテキスト表示になります。
       </li></ol>
 </div>
-
 </body>
 </html>
 

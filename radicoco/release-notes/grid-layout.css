@@ -26,8 +26,8 @@ display: none;
 
 #footer {
 grid-area: footer;
-color: #888;
-background-color: #f6f8fa;
+color: var(--sub-text);
+background-color: var(--sub-bg);
 font-size: 9pt;
 font-feature-settings: "palt";
 }
@@ -65,8 +65,8 @@ background-color: #ffb700 !important;
 .details pre,
 .details div {
 font-size: 80%;
-background: #f6f8fa;
-color: #888;
+background: var(--sub-bg);
+color: var(--sub-text);
 margin: 0;
 padding: 10px;
 line-height: 1.25;
@@ -81,6 +81,12 @@ color: #222;
 }
 
 /* detail items */
-span.detail > ul {
+.detail > ul {
 margin-top: 0;
+}
+.detail > ul li {
+margin-top: .2rem;
+}
+.detail.nonstyle > ul {
+  list-style: none;
 }

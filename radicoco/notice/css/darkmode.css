@@ -1,0 +1,18 @@
+:root {
+  --main-text: #555;
+  --main-bg: #f5f5f0;
+  --sub-text: #586069;
+  --sub-bg: #f6f8fa;
+  --link-gray: #ddd;
+  --item-bg: #e5e5e5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #bbb;
+    --main-bg: #333;
+    --sub-text: #8899A6;
+    --sub-bg: #192734;
+    --link-gray: #444;
+    --item-bg: #555657;
+  }
+}
