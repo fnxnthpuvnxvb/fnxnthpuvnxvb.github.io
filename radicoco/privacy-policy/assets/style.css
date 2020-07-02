@@ -107,3 +107,25 @@ aside {
   padding-bottom: 20px !important;
   padding-top: 20px !important;
 }
+
+#main {
+  color: var(--main-text) !important;
+}
+.bg-white {
+  background-color: var(--main-bg) !important;
+}
+.bg-gray {
+  background-color: var(--sub-bg) !important;
+}
+.text-gray {
+  color: var(--sub-text) !important;
+}
+.link-gray-dark {
+  color: var(--main-text) !important;
+}
+.link-gray-dark:hover {
+  color: #206d7f !important;
+}
+.Subhead-description {
+  color: var(--sub-text) !important;
+}
