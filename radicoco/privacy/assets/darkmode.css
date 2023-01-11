@@ -1,0 +1,14 @@
+:root {
+  --main-text: #24292e;
+  --main-bg: #fff;
+  --sub-text: #586069;
+  --sub-bg: #f6f8fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #bbb;
+    --main-bg: #333;
+    --sub-text: #8899A6;
+    --sub-bg: #3C4045;
+  }
+}
