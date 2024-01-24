@@ -129,3 +129,7 @@ aside {
 .Subhead-description {
   color: var(--sub-text) !important;
 }
+
+.avenir {
+  font-family: 'Avenir Next', sans-serif;
+}
